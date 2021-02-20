@@ -14,7 +14,7 @@ app.get("/",(req,res)=>{
         res.send(`${cityname}'s temperature is ${arrData[0].main.temp} &deg C`)
     })
     .on('end',(err)=>{
-        if (err) return console.log('connection closed due to errors', err);
+        if (err) return console.log('connection closed due to errors, click here to go back.', err);
         res.send(err)
     })
 
